@@ -1,0 +1,11 @@
+Para el SEO de mi sitio web agregué los siguentes elementos:
+1)Un mapa del sitio generado con XML-sitemap
+2)Se agrega bread crum en el footer de las páginas para mejor nevegaión del usuario
+3)Descripcion del sitio web como ayuda a los potenciales clientes de la página
+4)Palabras clave 'keywords' para mejorar el posicionamiento de la pagina en los buscadores
+5)Titulo identificativo a cada página
+6)Icono favicon para mejor visual de la página
+7)Estructura simple para la página web, para facilitar la lectura de los 'spiders' buscadores
+8)Media querys para mejor renderizado en pantallas pequeñas
+9)Iconos de acceso a mis redes sociales en el footer de cada página
+10)Adapto algunas etiquetas para adecuarlas a su función semántica
