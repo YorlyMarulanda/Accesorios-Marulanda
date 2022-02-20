@@ -1,12 +1,7 @@
-h1{color:red;
-    display: flex;
-justify-content: center;
-}
-
 body{
 
 	.header__bannerContainer{
-		padding-left: 30%;
+		
 		background: linear-gradient(45deg, cornflowerblue, pink);
 		.header__banner{
 			width: 50%;
@@ -32,6 +27,7 @@ body{
 	.header__menu{
 		display:flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 			.dropdown{
 				margin-left:  20px;
 
@@ -67,19 +63,15 @@ body{
 		.__flexTr{ 
 			display: flex;
 			list-style: none;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
+			
 			.--presentation{
-				width: 70%;
+				width: 50%;
 				border-radius: 10px;
 				margin: 20px;
 			}
 
 			.--letrasAzules{
-				text-align: justify;
-    			margin: 10px;
-				color:blue;
+				
 			}
 		}
 		.__flexTr1{
@@ -110,50 +102,43 @@ $mapa:( "1": red, "2": blue, "3":orange );
 }
 
 
-.navBar li a{
-    width: 6rem;
-    height: 1.5rem;
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    border: 1px solid black;
+.tabla-contacto{
+	
+	.___contacto-container{
+		
+		.--contacto-info{
+			
+			.myIframe{
+				border-radius: 20px;
+				margin: 10px;
+			}
+		}
+	}
 }
 
-.myIframe{
-    border-radius: 20px;
-    margin: 10px;
-}
 
 .formContainer{
     margin-left: 30%;
+	.input{
+		margin-top: 10px;
+	}
+	.formButtonContainer{
+		margin-top: 10px;
+		margin-left: 8%;
+	}
 }
 
-.formContainer form{
-    margin-left: 10%;
-}
 
-.formButtonContainer{
-    margin-top: 10px;
-    margin-left: 8%;
-}
-
-form .input{
-    margin-top: 10px;
-}
-
-.socialNetworks img{
-    width: 3rem;
-    margin: 10px 20px;
-}
 
 footer{
-    margin-top: 4rem;
-    margin-left: 35%;
+
+	.socialNetworks img{
+
+	}
 }
 
 .padre > div {
-border: 2px solid black; 
-
+border: 2px solid black;
 }
 
 .padre{ 
@@ -162,25 +147,10 @@ border: 2px solid black;
     grid-template-rows: 50px 50px;
     grid-gap: 2px;
     
-}
-
-/* MEDIA QUERE */
-@media only screen  and (min-width: 768px)  {
-    #padre { 
-        background-color: aquamarine;
-        grid-template-areas: 1fr;
-    }
-   
-}
-@media only screen and (max-width: 320px) {
-    #padre {
-        background-color: yellowgreen;
-     grid-template-areas: 1fr;
-    }      
-}   
+} 
 
 .tablaInfo{
     padding-top: 3rem;
-       } 
+} 
        
        

@@ -1,0 +1,136 @@
+@media (max-width: 640px) {
+  .header__bannerContainer {
+    width: 100%;
+  }
+  .header__bannerContainer .header__banner {
+    margin-left: 25%;
+    width: 0%;
+  }
+  .header__navegacion {
+    width: 100%;
+  }
+  .header__menu {
+    width: 100%;
+    padding: 0%;
+    height: auto;
+  }
+  .header__menu .btn {
+    margin-left: 0px;
+  }
+  .header__menu .dropdown {
+    margin-left: 0px;
+  }
+  .indexTable {
+    width: 50%;
+  }
+  .indexTable .__flexTr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .indexTable .__flexTr .--presentation {
+    width: 10%;
+    padding: 10;
+  }
+  .indexTable .__flexTr .--letrasAzules {
+    margin-top: 2rem;
+    width: 30%;
+    color: black;
+    text-align: justify;
+  }
+  .indexTable audio {
+    display: none;
+  }
+  .indexTable video {
+    display: none;
+  }
+  .tabla-contacto {
+    width: 100%;
+  }
+  .tabla-contacto .___contacto-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .tabla-contacto .___contacto-container .--contacto-info {
+    width: 100%;
+    margin: 10px 30%;
+  }
+  .formContainer {
+    margin: 20px 10%;
+  }
+  .formContainer .input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-top: 10px;
+  }
+  .formContainer .input label {
+    width: 20%;
+  }
+  .formContainer .input input {
+    width: 70%;
+  }
+  .formContainer .input-textarea {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 10px;
+  }
+  .formContainer .input-textarea textarea {
+    width: 100%;
+  }
+  .formContainer .formButtonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 5% 10% 5% 15%;
+  }
+  footer .btn {
+    width: 45%;
+    margin-left: 25%;
+  }
+  footer .socialNetworks {
+    margin-left: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .socialNetworks img {
+    width: 20%;
+  }
+}
+/*# sourceMappingURL=mainQuery.css.map */

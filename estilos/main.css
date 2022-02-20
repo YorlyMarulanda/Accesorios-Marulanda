@@ -1,15 +1,4 @@
-h1 {
-  color: red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 body .header__bannerContainer {
-  padding-left: 30%;
   background: linear-gradient(45deg, cornflowerblue, pink);
 }
 
@@ -47,6 +36,8 @@ body .header__navegacion .header__menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body .header__navegacion .header__menu .dropdown {
@@ -98,27 +89,12 @@ body .indexTable .__flexTr {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 body .indexTable .__flexTr .--presentation {
-  width: 70%;
+  width: 50%;
   border-radius: 10px;
   margin: 20px;
-}
-
-body .indexTable .__flexTr .--letrasAzules {
-  text-align: justify;
-  margin: 10px;
-  color: blue;
 }
 
 body .indexTable .__flexTr1 .--presentation {
@@ -149,16 +125,7 @@ ul li {
   background-color: orange;
 }
 
-.navBar li a {
-  width: 6rem;
-  height: 1.5rem;
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-  border: 1px solid black;
-}
-
-.myIframe {
+.tabla-contacto .___contacto-container .--contacto-info .myIframe {
   border-radius: 20px;
   margin: 10px;
 }
@@ -167,27 +134,13 @@ ul li {
   margin-left: 30%;
 }
 
-.formContainer form {
-  margin-left: 10%;
+.formContainer .input {
+  margin-top: 10px;
 }
 
-.formButtonContainer {
+.formContainer .formButtonContainer {
   margin-top: 10px;
   margin-left: 8%;
-}
-
-form .input {
-  margin-top: 10px;
-}
-
-.socialNetworks img {
-  width: 3rem;
-  margin: 10px 20px;
-}
-
-footer {
-  margin-top: 4rem;
-  margin-left: 35%;
 }
 
 .padre > div {
@@ -202,21 +155,6 @@ footer {
   -ms-grid-rows: 50px 50px;
       grid-template-rows: 50px 50px;
   grid-gap: 2px;
-}
-
-/* MEDIA QUERE */
-@media only screen and (min-width: 768px) {
-  #padre {
-    background-color: aquamarine;
-        grid-template-areas: 1fr;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #padre {
-    background-color: yellowgreen;
-        grid-template-areas: 1fr;
-  }
 }
 
 .tablaInfo {
