@@ -1,11 +1,8 @@
 @media (max-width: 640px) {
         
-            .header__bannerContainer{
+        .header__bannerContainer{
             width: 100%;
-            .header__banner{
-                margin-left: 25%;
-                width: 0%;
-            }
+
         }
         .header__navegacion{
             width: 100%;
@@ -23,7 +20,7 @@
             }
         }
         .indexTable{
-            width: 50%;
+            width: 100%;
         
             .__flexTr{ 
                 display: flex;
@@ -90,20 +87,20 @@
         footer{
             display: flex;
             flex-direction: column;
-            margin:  5% 10% 5% 15%;
+            
             .btn{
                 width: 45%;
                 margin-left: 25%;
             }
-                .socialNetworks{
-                    margin-left: 25%;
-                    display: flex;
-                    flex-direction: row;
+            .socialNetworks{
+                margin-left: 25%;
+                display: flex;
+                flex-direction: row;
 
-                    img{
-                        width: 20%;
-                    }
+                img{
+                    width: 30%;
                 }
+            }
             
         }
 }

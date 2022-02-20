@@ -1,9 +1,15 @@
 body .header__bannerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: linear-gradient(45deg, cornflowerblue, pink);
 }
 
 body .header__bannerContainer .header__banner {
-  width: 50%;
+  width: 40%;
   height: 15rem;
   background-image: url("../imagenes/Banner.jpg");
 }
@@ -46,12 +52,12 @@ body .header__navegacion .header__menu .dropdown {
 
 body .header__navegacion .header__menu .btn {
   margin-left: 20px;
-  color: white;
-  text-decoration: none;
+  color: whitesmoke;
 }
 
-body .header__navegacion .header__menu .btn:hover {
-  color: black;
+body .header__navegacion .header__menu .btn a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 body h3 {
@@ -69,44 +75,92 @@ body h3:hover {
           transform: scale(1, 2);
 }
 
-body .indexTable {
-  margin-left: 20%;
-  width: 60%;
-  background-color: cornflowerblue;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-body .indexTable td {
-  text-align: justify;
-  width: 30%;
-  height: 10%;
-}
-
-body .indexTable .__flexTr {
+body .table-container {
+  padding: 20px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-body .indexTable .__flexTr .--presentation {
+body .table-container .indexTable {
+  margin-left: 25%;
+  width: 50%;
+  max-height: 20%;
+}
+
+body .table-container .indexTable .auriculares-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: cornflowerblue;
+  margin-left: 25%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+body .table-container .indexTable .__flexTr {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: cornflowerblue;
+}
+
+body .table-container .indexTable .__flexTr .--presentation {
   width: 50%;
   border-radius: 10px;
   margin: 20px;
 }
 
-body .indexTable .__flexTr1 .--presentation {
+body .table-container .indexTable audio {
+  margin-top: 10px;
+  width: 70%;
+}
+
+body .table-container .indexTable video {
+  margin-top: 10px;
+  width: 70%;
+}
+
+body .table-container .indexTable .__flexTr1 {
+  background-color: cornflowerblue;
+}
+
+body .table-container .indexTable .__flexTr1 .--presentation {
   width: 70%;
   border-radius: 10px;
   margin: 20px;
 }
 
-body .indexTable .__flexTr1 .--letrasAzules {
+body .table-container .indexTable .__flexTr1 .--letrasAzules {
   text-align: justify;
   margin: 10px;
   color: blue;
+}
+
+body .table-container .indexTable .__flexTr1 td {
+  text-align: justify;
 }
 
 ul li {
@@ -125,22 +179,128 @@ ul li {
   background-color: orange;
 }
 
+.tabla-contacto {
+  width: 90%;
+  margin: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .tabla-contacto .___contacto-container .--contacto-info .myIframe {
   border-radius: 20px;
   margin: 10px;
 }
 
 .formContainer {
-  margin-left: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
 }
 
 .formContainer .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 10px;
 }
 
-.formContainer .formButtonContainer {
+.formContainer .input label {
+  width: 5%;
+  min-width: 10%;
+}
+
+.formContainer .input input {
+  width: 30%;
+}
+
+.formContainer .input-textarea {
+  margin-left: 30%;
   margin-top: 10px;
-  margin-left: 8%;
+}
+
+.formContainer .input-textarea textarea {
+  width: 57%;
+}
+
+.formContainer .formButtonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+  margin-top: 10px;
+  margin-left: 40%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+  background: #c31432;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#240b36), to(#c31432));
+  background: linear-gradient(to right, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer .container .breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer .container .btn {
+  width: 40%;
+}
+
+footer .container .socialNetworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-x: hidden;
+}
+
+footer .container .socialNetworks img {
+  width: 10%;
+  margin-left: 0.5rem;
 }
 
 .padre > div {
